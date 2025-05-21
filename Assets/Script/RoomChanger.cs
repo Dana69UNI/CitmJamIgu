@@ -41,7 +41,6 @@ public class RoomChanger : MonoBehaviour
             yield return null;
         }
 
-        // Asegura que terminan exactamente en la posición objetivo
         bg.transform.position = bgTarget;
         Player.transform.position = playerTarget;
 
