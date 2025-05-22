@@ -6,6 +6,8 @@ public class RoomChanger : MonoBehaviour
     public GameObject bg;
     public GameObject Roomcenter;
     public GameObject Player;
+    public bool isBlocked;
+    public DialogueHandler DialogueHandler;
 
     private float moveDuration = 2f;
     private float playerOffset = 1.7f;
@@ -14,12 +16,21 @@ public class RoomChanger : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        if(!isBlocked)
+        {
+            Vector3 movement = transform.position - Roomcenter.transform.position;
+            Vector3 bgTarget = bg.transform.position - movement * 2;
+            Vector3 playerTarget = Player.transform.position - movement * playerOffset;
 
-        Vector3 movement = transform.position - Roomcenter.transform.position;
-        Vector3 bgTarget = bg.transform.position - movement * 2;
-        Vector3 playerTarget = Player.transform.position - movement * playerOffset;
-
-        StartCoroutine(MoveRoom(bgTarget, playerTarget));
+            StartCoroutine(MoveRoom(bgTarget, playerTarget));
+        }
+        else
+        {
+            //llamar a dialogo!
+            Debug.Log("DEBERIA NANANANNA");
+            DialogueHandler.CallDialogue(0, 1);
+        }
+        
 
     }
 
