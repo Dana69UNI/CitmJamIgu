@@ -7,6 +7,7 @@ public class CombatMenu : MonoBehaviour
     public int ButtonIndex;
     private int buttonSelected;
     public GameObject canvas;
+    public GameObject canvasAccion;
     public GameObject Player;
     void Start()
     {
@@ -19,30 +20,52 @@ public class CombatMenu : MonoBehaviour
       
             if (Input.GetKeyDown(KeyCode.D))
             {
-                buttonSelected = 1;
+            if (buttonSelected == 2)
+            {
+                buttonSelected = 0;
+            }
+            else
+            {
+                buttonSelected++;
+            }
+            
 
             }
             if (Input.GetKeyDown(KeyCode.A))
             {
-                buttonSelected = 0;
-
+            if (buttonSelected == 0)
+            {
+                buttonSelected = 2;
             }
+            else
+            {
+                buttonSelected--;
+            }
+
+        }
             if (Input.GetKeyDown(KeyCode.E))
             {
-                if (buttonSelected == 1)
+                if (buttonSelected == 2)
                 {
                     Debug.Log("Rendir");
                     canvas.SetActive(false);
                     Player.SetActive(true);
 
-                 }
-                else
-                {
-                    Debug.Log("luchar");
-                    canvas.SetActive(false);
-                    Player.SetActive(true);
                 }
-            }
+                if (buttonSelected == 0)
+                     {
+                        Debug.Log("luchar");
+                        
+                    }
+                if (buttonSelected == 1)
+                {
+                    Debug.Log("Actuar");
+                    canvas.SetActive(false);
+                    canvasAccion.SetActive(true);
+
+                }
+
+             }
         
 
     }
