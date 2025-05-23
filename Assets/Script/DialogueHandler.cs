@@ -8,9 +8,12 @@ public class DialogueHandler : MonoBehaviour
     public TextMeshProUGUI textComp;
     public string[] dialogos;
     public float textSpeed;
+    public PlayerController playerController;
 
+    public bool InDialogue;
     private int index;
     private int contEnd;
+
    
     void Start()
     {
@@ -25,6 +28,7 @@ public class DialogueHandler : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.Space))
             {
                 NextLine();
+
             }
         }
         else 
@@ -32,7 +36,10 @@ public class DialogueHandler : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.Space))
             {
                 gameObject.SetActive(false);
+                InDialogue = false;
                 textComp.text = string.Empty;
+                contEnd = 0;
+                playerController.blockControls();
             }
         }
        
@@ -41,8 +48,11 @@ public class DialogueHandler : MonoBehaviour
     public void CallDialogue(int Index, int Cont)
     {
         gameObject.SetActive(true);
+        index = Index;
         contEnd = Index + Cont;
+        InDialogue = true;
         StartCoroutine(TypeLine(Index));
+        playerController.blockControls();
        
     }
 
