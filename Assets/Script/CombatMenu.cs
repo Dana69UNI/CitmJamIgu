@@ -10,6 +10,9 @@ public class CombatMenu : MonoBehaviour
     public GameObject canvasAccion;
     public GameObject Player;
     public AtaquesCombate atack;
+    public Animator Accion;
+    public Animator Luchar;
+    public Animator Rendir;
     void Start()
     {
         Player.SetActive(false);
@@ -18,9 +21,38 @@ public class CombatMenu : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-      
-            if (Input.GetKeyDown(KeyCode.D))
-            {
+
+        controlMenu();
+        controlAnimator();
+    }
+
+    void controlAnimator()
+    {
+        if(buttonSelected == 0)
+        {
+            Luchar.SetBool("isSelected", true);
+            Accion.SetBool("isSelected", false);
+            Rendir.SetBool("isSelected", false);
+        }
+        if (buttonSelected == 1)
+        {
+            Luchar.SetBool("isSelected", false);
+            Accion.SetBool("isSelected", true);
+            Rendir.SetBool("isSelected", false);
+        }
+        if (buttonSelected == 2)
+        {
+            Luchar.SetBool("isSelected", false);
+            Accion.SetBool("isSelected", false);
+            Rendir.SetBool("isSelected", true);
+        }
+    }
+
+    void controlMenu()
+    {
+
+        if (Input.GetKeyDown(KeyCode.D))
+        {
             if (buttonSelected == 2)
             {
                 buttonSelected = 0;
@@ -29,11 +61,11 @@ public class CombatMenu : MonoBehaviour
             {
                 buttonSelected++;
             }
-            
 
-            }
-            if (Input.GetKeyDown(KeyCode.A))
-            {
+
+        }
+        if (Input.GetKeyDown(KeyCode.A))
+        {
             if (buttonSelected == 0)
             {
                 buttonSelected = 2;
@@ -44,31 +76,29 @@ public class CombatMenu : MonoBehaviour
             }
 
         }
-            if (Input.GetKeyDown(KeyCode.E))
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            if (buttonSelected == 2)
             {
-                if (buttonSelected == 2)
-                {
-                    Debug.Log("Rendir");
-                    
+                Debug.Log("Rendir");
 
-                }
-                if (buttonSelected == 0)
-                {
-                    Debug.Log("luchar");
-                    canvas.SetActive(false);
-                    Player.SetActive(true);
-                    atack.EmpezarSecuencia();
-                }
-                if (buttonSelected == 1)
-                {
-                    Debug.Log("Actuar");
-                    canvas.SetActive(false);
-                    canvasAccion.SetActive(true);
 
-                }
+            }
+            if (buttonSelected == 0)
+            {
+                Debug.Log("luchar");
+                canvas.SetActive(false);
+                Player.SetActive(true);
+                atack.EmpezarSecuencia();
+            }
+            if (buttonSelected == 1)
+            {
+                Debug.Log("Actuar");
+                canvas.SetActive(false);
+                canvasAccion.SetActive(true);
 
-             }
-        
+            }
 
+        }
     }
 }
