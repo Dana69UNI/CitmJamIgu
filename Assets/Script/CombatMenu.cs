@@ -9,6 +9,7 @@ public class CombatMenu : MonoBehaviour
     public GameObject canvas;
     public GameObject canvasAccion;
     public GameObject Player;
+    public AtaquesCombate atack;
     void Start()
     {
         Player.SetActive(false);
@@ -48,15 +49,16 @@ public class CombatMenu : MonoBehaviour
                 if (buttonSelected == 2)
                 {
                     Debug.Log("Rendir");
-                    canvas.SetActive(false);
-                    Player.SetActive(true);
+                    
 
                 }
                 if (buttonSelected == 0)
-                     {
-                        Debug.Log("luchar");
-                        
-                    }
+                {
+                    Debug.Log("luchar");
+                    canvas.SetActive(false);
+                    Player.SetActive(true);
+                    atack.EmpezarSecuencia();
+                }
                 if (buttonSelected == 1)
                 {
                     Debug.Log("Actuar");
