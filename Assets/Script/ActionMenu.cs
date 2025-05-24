@@ -9,6 +9,9 @@ public class ActionMenu : MonoBehaviour
     public GameObject canvas;
     public GameObject canvasAccion;
     public GameObject Player;
+    public Animator Hablar;
+    public Animator Desoir;
+    public Animator Huir;
     void Start()
     {
         Player.SetActive(false);
@@ -18,7 +21,34 @@ public class ActionMenu : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        menuControl();
+        animControl();
+    }
 
+    void animControl()
+    {
+        if(buttonSelected == 0)
+        {
+            Hablar.SetBool("isSelected", true);
+            Desoir.SetBool("isSelected", false);
+            Huir.SetBool("isSelected", false);
+        }
+        if (buttonSelected == 1)
+        {
+            Hablar.SetBool("isSelected", false);
+            Desoir.SetBool("isSelected", true);
+            Huir.SetBool("isSelected", false);
+        }
+        if (buttonSelected == 2)
+        {
+            Desoir.SetBool("isSelected", false);
+            Hablar.SetBool("isSelected", false);
+            Huir.SetBool("isSelected", true);
+        }
+    }
+
+    void menuControl()
+    {
         if (Input.GetKeyDown(KeyCode.D))
         {
             if (buttonSelected == 2)
@@ -58,7 +88,7 @@ public class ActionMenu : MonoBehaviour
                 Debug.Log("Hablarlo");
                 canvasAccion.SetActive(false);
                 canvas.SetActive(true);
-                
+
             }
             if (buttonSelected == 1)
             {
@@ -69,7 +99,5 @@ public class ActionMenu : MonoBehaviour
             }
 
         }
-
-
     }
 }
