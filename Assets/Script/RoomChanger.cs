@@ -14,11 +14,17 @@ public class RoomChanger : MonoBehaviour
     private bool BeenRead = false;
     public int DialogoAltIndex;
     public int ContAltIndex;
+    private PlayerController playerController;
 
     private float moveDuration = 2f;
     private float playerOffset = 1.7f;
 
     private bool isMoving = false;
+
+    private void Start()
+    {
+        playerController = Player.GetComponent<PlayerController>();
+    }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -56,10 +62,10 @@ public class RoomChanger : MonoBehaviour
     private IEnumerator MoveRoom(Vector3 bgTarget, Vector3 playerTarget)
     {
         isMoving = true;
-
+        playerController.blockControls();
         Vector3 bgStart = bg.transform.position;
         Vector3 playerStart = Player.transform.position;
-
+        
         float elapsed = 0f;
         while (elapsed < moveDuration)
         {
@@ -75,5 +81,6 @@ public class RoomChanger : MonoBehaviour
         Player.transform.position = playerTarget;
 
         isMoving = false;
+        playerController.blockControls();
     }
 }

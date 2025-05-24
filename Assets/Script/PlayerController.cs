@@ -30,5 +30,6 @@ public class PlayerController : MonoBehaviour
     {
         BlockMovement = !BlockMovement;
         rb.velocity = Vector2.zero;
+
     }
 }
