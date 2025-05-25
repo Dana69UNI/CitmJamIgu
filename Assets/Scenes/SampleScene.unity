@@ -3928,7 +3928,7 @@ GameObject:
   - component: {fileID: 1759312447}
   - component: {fileID: 1759312446}
   m_Layer: 0
-  m_Name: Hablar
+  m_Name: Hablaraa
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4455,9 +4455,9 @@ MonoBehaviour:
   canvas: {fileID: 942634656}
   canvasAccion: {fileID: 1245607121}
   Player: {fileID: 2018828474}
-  Hablar: {fileID: 1893431859}
-  Desoir: {fileID: 663817467}
-  Huir: {fileID: 421443316}
+  Hablar: {fileID: 1759312446}
+  Desoir: {fileID: 1469295871}
+  Huir: {fileID: 85955306}
 --- !u!95 &1893431859
 Animator:
   serializedVersion: 5
@@ -4466,7 +4466,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1893431852}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 15ebd5e089da64e418fe381f9f76ad8f, type: 2}
   m_CullingMode: 0

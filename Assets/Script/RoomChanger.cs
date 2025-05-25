@@ -1,5 +1,7 @@
 using System.Collections;
+using Unity.VisualScripting;
 using UnityEngine;
+using static UnityEngine.GraphicsBuffer;
 
 public class RoomChanger : MonoBehaviour
 {
@@ -15,6 +17,7 @@ public class RoomChanger : MonoBehaviour
     public int DialogoAltIndex;
     public int ContAltIndex;
     private PlayerController playerController;
+    private bool cantChange;
 
     private float moveDuration = 2f;
     private float playerOffset = 1.7f;
@@ -30,11 +33,14 @@ public class RoomChanger : MonoBehaviour
     {
         if(!isBlocked)
         {
-            Vector3 movement = transform.position - Roomcenter.transform.position;
-            Vector3 bgTarget = bg.transform.position - movement * 2;
-            Vector3 playerTarget = Player.transform.position - movement * playerOffset;
+            if (!cantChange)
+            {
+                Vector3 movement = transform.position - Roomcenter.transform.position;
+                Vector3 bgTarget = bg.transform.position - movement * 2;
+                Vector3 playerTarget = Player.transform.position - movement * playerOffset;
 
-            StartCoroutine(MoveRoom(bgTarget, playerTarget));
+                StartCoroutine(MoveRoom(bgTarget, playerTarget));
+            }
         }
         else
         {
@@ -65,7 +71,7 @@ public class RoomChanger : MonoBehaviour
         playerController.blockControls();
         Vector3 bgStart = bg.transform.position;
         Vector3 playerStart = Player.transform.position;
-        
+        cantChange = true;
         float elapsed = 0f;
         while (elapsed < moveDuration)
         {
@@ -82,5 +88,18 @@ public class RoomChanger : MonoBehaviour
 
         isMoving = false;
         playerController.blockControls();
+        StartCoroutine(coolDownMoverse());
+    }
+
+    private IEnumerator coolDownMoverse()
+    {
+        
+        float elapsed = 0f;
+        while (elapsed < 1f)
+        {
+            elapsed += Time.deltaTime;
+            yield return null;
+        }
+        cantChange = false;
     }
 }
