@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
-
+using FMOD.Studio;
 public class CombatDialogueHandler : MonoBehaviour
 {
     public TextMeshProUGUI textComp;
@@ -12,10 +12,11 @@ public class CombatDialogueHandler : MonoBehaviour
     private int index;
     private int contEnd;
     public int EndScene=0;
+    private EventInstance playerDialogue;
 
     void Start()
     {
-       
+       playerDialogue = AudioManager.instance.CreateInstance(FMODEvents.instance.playerDialogue);
 
         
     }
@@ -36,9 +37,16 @@ public class CombatDialogueHandler : MonoBehaviour
     {
         foreach (char c in dialogos[index].ToCharArray())
         {
+
             textComp.text += c;
+            if(c != ' ')
+            {
+                playerDialogue.start();
+            }
+            
             yield return new WaitForSeconds(textSpeed);
         }
+        playerDialogue.stop(STOP_MODE.IMMEDIATE);
         if(EndScene == 1)
         {
             Debug.Log("Acabar primer dia");

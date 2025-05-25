@@ -1007,6 +1007,143 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a217759282878104fa43d71ae650a7c3, type: 3}
+--- !u!1001 &1016961956
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4853364433276644238, guid: 00d82c3b0571402468f09c417d3bf8b4, type: 3}
+      propertyPath: <music>k__BackingField.Path
+      value: event:/Musica
+      objectReference: {fileID: 0}
+    - target: {fileID: 4853364433276644238, guid: 00d82c3b0571402468f09c417d3bf8b4, type: 3}
+      propertyPath: <music>k__BackingField.Guid.Data1
+      value: 664763374
+      objectReference: {fileID: 0}
+    - target: {fileID: 4853364433276644238, guid: 00d82c3b0571402468f09c417d3bf8b4, type: 3}
+      propertyPath: <music>k__BackingField.Guid.Data2
+      value: 1142114476
+      objectReference: {fileID: 0}
+    - target: {fileID: 4853364433276644238, guid: 00d82c3b0571402468f09c417d3bf8b4, type: 3}
+      propertyPath: <music>k__BackingField.Guid.Data3
+      value: 1138127516
+      objectReference: {fileID: 0}
+    - target: {fileID: 4853364433276644238, guid: 00d82c3b0571402468f09c417d3bf8b4, type: 3}
+      propertyPath: <music>k__BackingField.Guid.Data4
+      value: -670432587
+      objectReference: {fileID: 0}
+    - target: {fileID: 4853364433276644238, guid: 00d82c3b0571402468f09c417d3bf8b4, type: 3}
+      propertyPath: <musicChunguelas>k__BackingField.Path
+      value: event:/MusicaChungelas
+      objectReference: {fileID: 0}
+    - target: {fileID: 4853364433276644238, guid: 00d82c3b0571402468f09c417d3bf8b4, type: 3}
+      propertyPath: <playerFootsteps>k__BackingField.Path
+      value: event:/Pasos
+      objectReference: {fileID: 0}
+    - target: {fileID: 4853364433276644238, guid: 00d82c3b0571402468f09c417d3bf8b4, type: 3}
+      propertyPath: <playerDialogueVoice>k__BackingField.Path
+      value: event:/DialogoPersonaje
+      objectReference: {fileID: 0}
+    - target: {fileID: 4853364433276644238, guid: 00d82c3b0571402468f09c417d3bf8b4, type: 3}
+      propertyPath: <musicChunguelas>k__BackingField.Guid.Data1
+      value: 1853771252
+      objectReference: {fileID: 0}
+    - target: {fileID: 4853364433276644238, guid: 00d82c3b0571402468f09c417d3bf8b4, type: 3}
+      propertyPath: <musicChunguelas>k__BackingField.Guid.Data2
+      value: 1078219294
+      objectReference: {fileID: 0}
+    - target: {fileID: 4853364433276644238, guid: 00d82c3b0571402468f09c417d3bf8b4, type: 3}
+      propertyPath: <musicChunguelas>k__BackingField.Guid.Data3
+      value: -1765935686
+      objectReference: {fileID: 0}
+    - target: {fileID: 4853364433276644238, guid: 00d82c3b0571402468f09c417d3bf8b4, type: 3}
+      propertyPath: <musicChunguelas>k__BackingField.Guid.Data4
+      value: 1675760782
+      objectReference: {fileID: 0}
+    - target: {fileID: 4853364433276644238, guid: 00d82c3b0571402468f09c417d3bf8b4, type: 3}
+      propertyPath: <playerFootsteps>k__BackingField.Guid.Data1
+      value: 163682548
+      objectReference: {fileID: 0}
+    - target: {fileID: 4853364433276644238, guid: 00d82c3b0571402468f09c417d3bf8b4, type: 3}
+      propertyPath: <playerFootsteps>k__BackingField.Guid.Data2
+      value: 1108440785
+      objectReference: {fileID: 0}
+    - target: {fileID: 4853364433276644238, guid: 00d82c3b0571402468f09c417d3bf8b4, type: 3}
+      propertyPath: <playerFootsteps>k__BackingField.Guid.Data3
+      value: 739234195
+      objectReference: {fileID: 0}
+    - target: {fileID: 4853364433276644238, guid: 00d82c3b0571402468f09c417d3bf8b4, type: 3}
+      propertyPath: <playerFootsteps>k__BackingField.Guid.Data4
+      value: -1530554035
+      objectReference: {fileID: 0}
+    - target: {fileID: 4853364433276644238, guid: 00d82c3b0571402468f09c417d3bf8b4, type: 3}
+      propertyPath: <playerDialogueVoice>k__BackingField.Guid.Data1
+      value: -1438213180
+      objectReference: {fileID: 0}
+    - target: {fileID: 4853364433276644238, guid: 00d82c3b0571402468f09c417d3bf8b4, type: 3}
+      propertyPath: <playerDialogueVoice>k__BackingField.Guid.Data2
+      value: 1284690577
+      objectReference: {fileID: 0}
+    - target: {fileID: 4853364433276644238, guid: 00d82c3b0571402468f09c417d3bf8b4, type: 3}
+      propertyPath: <playerDialogueVoice>k__BackingField.Guid.Data3
+      value: -886960466
+      objectReference: {fileID: 0}
+    - target: {fileID: 4853364433276644238, guid: 00d82c3b0571402468f09c417d3bf8b4, type: 3}
+      propertyPath: <playerDialogueVoice>k__BackingField.Guid.Data4
+      value: 1216386615
+      objectReference: {fileID: 0}
+    - target: {fileID: 8157492010415238534, guid: 00d82c3b0571402468f09c417d3bf8b4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.25605506
+      objectReference: {fileID: 0}
+    - target: {fileID: 8157492010415238534, guid: 00d82c3b0571402468f09c417d3bf8b4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.22761771
+      objectReference: {fileID: 0}
+    - target: {fileID: 8157492010415238534, guid: 00d82c3b0571402468f09c417d3bf8b4, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -10.004869
+      objectReference: {fileID: 0}
+    - target: {fileID: 8157492010415238534, guid: 00d82c3b0571402468f09c417d3bf8b4, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8157492010415238534, guid: 00d82c3b0571402468f09c417d3bf8b4, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8157492010415238534, guid: 00d82c3b0571402468f09c417d3bf8b4, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8157492010415238534, guid: 00d82c3b0571402468f09c417d3bf8b4, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8157492010415238534, guid: 00d82c3b0571402468f09c417d3bf8b4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8157492010415238534, guid: 00d82c3b0571402468f09c417d3bf8b4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8157492010415238534, guid: 00d82c3b0571402468f09c417d3bf8b4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8427220216537858207, guid: 00d82c3b0571402468f09c417d3bf8b4, type: 3}
+      propertyPath: m_Name
+      value: AudioManager
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 00d82c3b0571402468f09c417d3bf8b4, type: 3}
 --- !u!1 &1028328859
 GameObject:
   m_ObjectHideFlags: 0
@@ -1159,6 +1296,51 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2, y: 2}
   m_EdgeRadius: 0
+--- !u!1 &1034344537
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1034344539}
+  - component: {fileID: 1034344538}
+  m_Layer: 0
+  m_Name: MusicaHabitacionHandler
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1034344538
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1034344537}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10b4c56b899d1ef488fcac13c55cb561, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FinalRoom: 0
+--- !u!4 &1034344539
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1034344537}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.25605506, y: 0.22761771, z: -10.004869}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1182070828
 GameObject:
   m_ObjectHideFlags: 0
@@ -1417,7 +1599,7 @@ MonoBehaviour:
   - "Se queda ah\xED... Espero no pisarlo"
   - "Nunca entender\xE9 de donde sale una ba\xF1era tan comicamente grande..."
   - 'JOPE, es jodidamente enorme '
-  textSpeed: 0.009
+  textSpeed: 0.02
   playerController: {fileID: 226389144}
   InDialogue: 0
 --- !u!1 &1415278421
@@ -2106,3 +2288,5 @@ SceneRoots:
   - {fileID: 413207846}
   - {fileID: 1277182639}
   - {fileID: 1700409529}
+  - {fileID: 1016961956}
+  - {fileID: 1034344539}
