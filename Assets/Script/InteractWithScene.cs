@@ -12,8 +12,11 @@ public class InteractWithScene : MonoBehaviour
     public int DialogoAltIndex;
     public int ContAltIndex;
     private bool playerInRange = false;
+    public bool isBathTrigger1;
+    public bool isBathTrigger2;
+    public bool isBathTrigger3;
 
-   
+
     void OnTriggerEnter2D(Collider2D collision)
     {
         playerInRange = true;
@@ -28,14 +31,35 @@ public class InteractWithScene : MonoBehaviour
     {
         if (playerInRange && Input.GetKeyDown(KeyCode.E) && dialogueHandler.InDialogue==false )
         {
-            if(AlternateDialogue && BeenRead)
+            if (!isBathTrigger1)
             {
-                dialogueHandler.CallDialogue(DialogoAltIndex, ContAltIndex);
+                if (!isBathTrigger2)
+                {
+                    if (!isBathTrigger3)
+                    {
+                        if (AlternateDialogue && BeenRead)
+                        {
+                            dialogueHandler.CallDialogue(DialogoAltIndex, ContAltIndex);
+                        }
+                        else
+                        {
+                            dialogueHandler.CallDialogue(DialogoIndex, ContIndex);
+                            BeenRead = true;
+                        }
+                    }
+                    else
+                    {
+                        Debug.Log("cinematics3");
+                    }
+                }
+                else
+                {
+                    Debug.Log("cinematics2");
+                }
             }
             else
             {
-                dialogueHandler.CallDialogue(DialogoIndex, ContIndex);
-                BeenRead = true;
+                Debug.Log("cinematics1");
             }
             
         }
