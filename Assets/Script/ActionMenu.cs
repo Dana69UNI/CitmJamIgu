@@ -12,6 +12,8 @@ public class ActionMenu : MonoBehaviour
     public Animator Hablar;
     public Animator Desoir;
     public Animator Huir;
+    public bool PeleaFinal;
+    public CombatDialogueHandler dialogueHandler;
     void Start()
     {
         Player.SetActive(false);
@@ -81,6 +83,11 @@ public class ActionMenu : MonoBehaviour
                 Debug.Log("Huir");
                 canvasAccion.SetActive(false);
                 canvas.SetActive(true);
+                dialogueHandler.CallDialogue(3, 0);
+                if(PeleaFinal)
+                {
+                    dialogueHandler.CallDialogue(4, 0);
+                }
 
             }
             if (buttonSelected == 0)
@@ -88,6 +95,11 @@ public class ActionMenu : MonoBehaviour
                 Debug.Log("Hablarlo");
                 canvasAccion.SetActive(false);
                 canvas.SetActive(true);
+                dialogueHandler.CallDialogue(3, 0);
+                if (PeleaFinal)
+                {
+
+                }
 
             }
             if (buttonSelected == 1)
@@ -95,6 +107,11 @@ public class ActionMenu : MonoBehaviour
                 Debug.Log("Ignorar");
                 canvasAccion.SetActive(false);
                 canvas.SetActive(true);
+                dialogueHandler.CallDialogue(3, 0);
+                if (PeleaFinal)
+                {
+
+                }
 
             }
 

@@ -7,7 +7,12 @@ public class DialogueCallerBattle : MonoBehaviour
     public CombatDialogueHandler dialogueHandler;
     public int DialogoIndex;
 
-    void OnEnable()
+    //void OnEnable()
+    //{
+    //    BattleMessage();
+    //}
+
+    void Start()
     {
         BattleMessage();
     }

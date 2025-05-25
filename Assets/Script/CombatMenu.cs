@@ -13,6 +13,9 @@ public class CombatMenu : MonoBehaviour
     public Animator Accion;
     public Animator Luchar;
     public Animator Rendir;
+    public bool PeleaFinal;
+    public CombatDialogueHandler dialogueHandler;
+    public int Combate;
     void Start()
     {
         Player.SetActive(false);
@@ -80,16 +83,27 @@ public class CombatMenu : MonoBehaviour
         {
             if (buttonSelected == 2)
             {
-                Debug.Log("Rendir");
-
+                if (Combate == 1)
+                {
+                    Debug.Log("CambioEscena2");
+                }
+                if (Combate == 0)
+                {
+                    Debug.Log("CambioEscena");
+                }
 
             }
             if (buttonSelected == 0)
             {
                 Debug.Log("luchar");
-                canvas.SetActive(false);
-                Player.SetActive(true);
-                atack.EmpezarSecuencia();
+                dialogueHandler.CallDialogue(3, 0);
+                if (PeleaFinal)
+                {
+                    canvas.SetActive(false);
+                    Player.SetActive(true);
+                    atack.EmpezarSecuencia();
+                }
+                
             }
             if (buttonSelected == 1)
             {

@@ -616,6 +616,9 @@ MonoBehaviour:
   Accion: {fileID: 715944282}
   Luchar: {fileID: 227625646}
   Rendir: {fileID: 487261472}
+  PeleaFinal: 0
+  dialogueHandler: {fileID: 0}
+  Combate: 1
 --- !u!114 &233831332
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -738,6 +741,9 @@ MonoBehaviour:
   Accion: {fileID: 715944282}
   Luchar: {fileID: 227625646}
   Rendir: {fileID: 487261472}
+  PeleaFinal: 0
+  dialogueHandler: {fileID: 1131447849}
+  Combate: 1
 --- !u!114 &289829249
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1338,6 +1344,8 @@ MonoBehaviour:
   Hablar: {fileID: 1893431859}
   Desoir: {fileID: 663817467}
   Huir: {fileID: 421443316}
+  PeleaFinal: 0
+  dialogueHandler: {fileID: 1131447849}
 --- !u!95 &421443316
 Animator:
   serializedVersion: 5
@@ -2522,6 +2530,8 @@ MonoBehaviour:
   Hablar: {fileID: 1893431859}
   Desoir: {fileID: 663817467}
   Huir: {fileID: 421443316}
+  PeleaFinal: 0
+  dialogueHandler: {fileID: 1131447849}
 --- !u!95 &663817467
 Animator:
   serializedVersion: 5
@@ -3335,8 +3345,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: c14c556fea3d53c42806b92ff153068c, type: 2}
+  m_sharedMaterial: {fileID: -7889368390022327594, guid: c14c556fea3d53c42806b92ff153068c, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3360,8 +3370,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 40.8
-  m_fontSizeBase: 40.8
+  m_fontSize: 22
+  m_fontSizeBase: 22
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -3419,7 +3429,10 @@ MonoBehaviour:
   - . . .
   - No te aparta  la mirada
   - Te estrangula en batalla
-  textSpeed: 0.6
+  - El miedo te paraliza ...
+  - No es momento de huir
+  textSpeed: 0.1
+  EndScene: 0
 --- !u!222 &1131447850
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4871,6 +4884,8 @@ MonoBehaviour:
   Hablar: {fileID: 1759312446}
   Desoir: {fileID: 1469295871}
   Huir: {fileID: 85955306}
+  PeleaFinal: 0
+  dialogueHandler: {fileID: 1131447849}
 --- !u!95 &1893431859
 Animator:
   serializedVersion: 5
@@ -4953,6 +4968,9 @@ MonoBehaviour:
   Accion: {fileID: 715944282}
   Luchar: {fileID: 227625646}
   Rendir: {fileID: 487261472}
+  PeleaFinal: 0
+  dialogueHandler: {fileID: 0}
+  Combate: 1
 --- !u!114 &1948349140
 MonoBehaviour:
   m_ObjectHideFlags: 0
