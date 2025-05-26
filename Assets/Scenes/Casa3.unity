@@ -1512,13 +1512,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textComp: {fileID: 699427112}
   dialogos:
-  - "Deberia ir al ba\xF1o y por lo menos lavarme la cara antes de salir."
-  - Enserio, deberia lavarme la carita...
-  - "\xBFQu\xE9 hace Three Cheers of Sweet revenge en el suelo?"
-  - "En realidad lo hace a\xFAn m\xE1s emo... Ah\xED se queda."
-  - "Se queda ah\xED... Espero no pisarlo"
-  - "Nunca entender\xE9 de donde sale una ba\xF1era tan comicamente grande..."
-  - 'JOPE, es jodidamente enorme '
+  - Deberia ir al bano y por lo menos lavarme la cara antes de salir.
+  - No quiero ir al bano
+  - "\xBFQue hace Three Cheers of Sweet revenge en el suelo?"
+  - Tendria que recogerlo, pero no me apetece nada
+  - Se queda ahi... Espero no pisarlo
+  - Nunca entendere de donde sale una banera tan comicamente grande...
+  - Jopetas
   textSpeed: 0.02
   playerController: {fileID: 226389144}
   InDialogue: 0
