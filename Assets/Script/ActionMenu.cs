@@ -83,10 +83,14 @@ public class ActionMenu : MonoBehaviour
                 Debug.Log("Huir");
                 canvasAccion.SetActive(false);
                 canvas.SetActive(true);
-                dialogueHandler.CallDialogue(3, 0);
+                
                 if(PeleaFinal)
                 {
                     dialogueHandler.CallDialogue(4, 0);
+                }
+                else
+                {
+                    dialogueHandler.CallDialogue(3, 0);
                 }
 
             }

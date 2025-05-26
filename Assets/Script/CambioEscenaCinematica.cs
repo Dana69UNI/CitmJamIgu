@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class CambioEscenaCinematica : MonoBehaviour
 {
     public int cinematicaInt;
@@ -10,17 +10,17 @@ public class CambioEscenaCinematica : MonoBehaviour
     {
         if (cinematicaInt == 0)
         {
-            Debug.Log("Primer combate");
+            SceneManager.LoadScene(sceneBuildIndex: 2);
 
         }
         if (cinematicaInt == 1)
         {
-            Debug.Log("Segundo combate");
+            SceneManager.LoadScene(sceneBuildIndex: 6);
 
         }
         if (cinematicaInt == 2)
         {
-            Debug.Log("Tercero combate");
+            SceneManager.LoadScene(sceneBuildIndex: 10);
 
         }
     }

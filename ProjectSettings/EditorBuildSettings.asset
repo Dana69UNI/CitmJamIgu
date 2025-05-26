@@ -6,6 +6,39 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Combate.unity
+    path: Assets/Scenes/Casa.unity
+    guid: b0410a8b4cebc854881308b3bca832a7
+  - enabled: 1
+    path: Assets/Scenes/Cinematica.unity
+    guid: a42086017f9b48249af1316d6dc9a0bf
+  - enabled: 1
+    path: Assets/Scenes/Combate 1.unity
+    guid: ecb44fc4bd6aac9419e1cc67a2b88108
+  - enabled: 1
+    path: "Assets/Scenes/Ma\xF1anaSeraOtroDia.unity"
+    guid: 0192e2d47bd5bfc45aec68ea82329464
+  - enabled: 1
+    path: Assets/Scenes/Casa2.unity
+    guid: 633ab59761b629747ace709d22408d78
+  - enabled: 1
+    path: Assets/Scenes/Cinematica2.unity
+    guid: 95ce4fcb182103c468ad799b5c93fa4b
+  - enabled: 1
+    path: Assets/Scenes/Combate2.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
+  - enabled: 1
+    path: "Assets/Scenes/Ma\xF1anaSeraOtroDia2.unity"
+    guid: 63c52ccfd328ac845b199dd217db5ae3
+  - enabled: 1
+    path: Assets/Scenes/Casa3.unity
+    guid: 96a06bd3bce64df43a98324c7f1c1c34
+  - enabled: 1
+    path: Assets/Scenes/Cinematica3.unity
+    guid: f8fc0ea8c3037e241aab253e31c7006c
+  - enabled: 1
+    path: Assets/Scenes/CombateFinal.unity
+    guid: 44177473fb689e048b36bff8227a46b1
+  - enabled: 1
+    path: Assets/Scenes/Pero no te Rindes.unity
+    guid: e8f4c44f83e881e4c80d8fa2ee62dbc4
   m_configObjects: {}

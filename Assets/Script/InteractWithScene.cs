@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class InteractWithScene : MonoBehaviour
 {
     public DialogueHandler dialogueHandler;
@@ -49,17 +49,17 @@ public class InteractWithScene : MonoBehaviour
                     }
                     else
                     {
-                        Debug.Log("cinematics3");
+                        SceneManager.LoadScene(sceneBuildIndex: 9);
                     }
                 }
                 else
                 {
-                    Debug.Log("cinematics2");
+                    SceneManager.LoadScene(sceneBuildIndex: 5);
                 }
             }
             else
             {
-                Debug.Log("cinematics1");
+                SceneManager.LoadScene(sceneBuildIndex:1);
             }
             
         }

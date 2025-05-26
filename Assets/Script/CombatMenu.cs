@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CombatMenu : MonoBehaviour
 {
@@ -85,11 +86,11 @@ public class CombatMenu : MonoBehaviour
             {
                 if (Combate == 1)
                 {
-                    Debug.Log("CambioEscena2");
+                    SceneManager.LoadScene(sceneBuildIndex: 7);
                 }
                 if (Combate == 0)
                 {
-                    Debug.Log("CambioEscena");
+                    SceneManager.LoadScene(sceneBuildIndex: 3);
                 }
 
             }

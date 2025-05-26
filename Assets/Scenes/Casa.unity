@@ -668,8 +668,8 @@ MonoBehaviour:
   AlternateDialogue: 0
   DialogoAltIndex: 0
   ContAltIndex: 0
-  isBathTrigger1: 0
-  isBathTrigger2: 1
+  isBathTrigger1: 1
+  isBathTrigger2: 0
   isBathTrigger3: 0
 --- !u!1 &803858553
 GameObject:
@@ -1015,86 +1015,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 4853364433276644238, guid: 00d82c3b0571402468f09c417d3bf8b4, type: 3}
-      propertyPath: <music>k__BackingField.Path
-      value: event:/Musica
-      objectReference: {fileID: 0}
-    - target: {fileID: 4853364433276644238, guid: 00d82c3b0571402468f09c417d3bf8b4, type: 3}
-      propertyPath: <music>k__BackingField.Guid.Data1
-      value: 664763374
-      objectReference: {fileID: 0}
-    - target: {fileID: 4853364433276644238, guid: 00d82c3b0571402468f09c417d3bf8b4, type: 3}
-      propertyPath: <music>k__BackingField.Guid.Data2
-      value: 1142114476
-      objectReference: {fileID: 0}
-    - target: {fileID: 4853364433276644238, guid: 00d82c3b0571402468f09c417d3bf8b4, type: 3}
-      propertyPath: <music>k__BackingField.Guid.Data3
-      value: 1138127516
-      objectReference: {fileID: 0}
-    - target: {fileID: 4853364433276644238, guid: 00d82c3b0571402468f09c417d3bf8b4, type: 3}
-      propertyPath: <music>k__BackingField.Guid.Data4
-      value: -670432587
-      objectReference: {fileID: 0}
-    - target: {fileID: 4853364433276644238, guid: 00d82c3b0571402468f09c417d3bf8b4, type: 3}
-      propertyPath: <musicChunguelas>k__BackingField.Path
-      value: event:/MusicaChungelas
-      objectReference: {fileID: 0}
-    - target: {fileID: 4853364433276644238, guid: 00d82c3b0571402468f09c417d3bf8b4, type: 3}
-      propertyPath: <playerFootsteps>k__BackingField.Path
-      value: event:/Pasos
-      objectReference: {fileID: 0}
-    - target: {fileID: 4853364433276644238, guid: 00d82c3b0571402468f09c417d3bf8b4, type: 3}
-      propertyPath: <playerDialogueVoice>k__BackingField.Path
-      value: event:/DialogoPersonaje
-      objectReference: {fileID: 0}
-    - target: {fileID: 4853364433276644238, guid: 00d82c3b0571402468f09c417d3bf8b4, type: 3}
-      propertyPath: <musicChunguelas>k__BackingField.Guid.Data1
-      value: 1853771252
-      objectReference: {fileID: 0}
-    - target: {fileID: 4853364433276644238, guid: 00d82c3b0571402468f09c417d3bf8b4, type: 3}
-      propertyPath: <musicChunguelas>k__BackingField.Guid.Data2
-      value: 1078219294
-      objectReference: {fileID: 0}
-    - target: {fileID: 4853364433276644238, guid: 00d82c3b0571402468f09c417d3bf8b4, type: 3}
-      propertyPath: <musicChunguelas>k__BackingField.Guid.Data3
-      value: -1765935686
-      objectReference: {fileID: 0}
-    - target: {fileID: 4853364433276644238, guid: 00d82c3b0571402468f09c417d3bf8b4, type: 3}
-      propertyPath: <musicChunguelas>k__BackingField.Guid.Data4
-      value: 1675760782
-      objectReference: {fileID: 0}
-    - target: {fileID: 4853364433276644238, guid: 00d82c3b0571402468f09c417d3bf8b4, type: 3}
-      propertyPath: <playerFootsteps>k__BackingField.Guid.Data1
-      value: 163682548
-      objectReference: {fileID: 0}
-    - target: {fileID: 4853364433276644238, guid: 00d82c3b0571402468f09c417d3bf8b4, type: 3}
-      propertyPath: <playerFootsteps>k__BackingField.Guid.Data2
-      value: 1108440785
-      objectReference: {fileID: 0}
-    - target: {fileID: 4853364433276644238, guid: 00d82c3b0571402468f09c417d3bf8b4, type: 3}
-      propertyPath: <playerFootsteps>k__BackingField.Guid.Data3
-      value: 739234195
-      objectReference: {fileID: 0}
-    - target: {fileID: 4853364433276644238, guid: 00d82c3b0571402468f09c417d3bf8b4, type: 3}
-      propertyPath: <playerFootsteps>k__BackingField.Guid.Data4
-      value: -1530554035
-      objectReference: {fileID: 0}
-    - target: {fileID: 4853364433276644238, guid: 00d82c3b0571402468f09c417d3bf8b4, type: 3}
-      propertyPath: <playerDialogueVoice>k__BackingField.Guid.Data1
-      value: -1438213180
-      objectReference: {fileID: 0}
-    - target: {fileID: 4853364433276644238, guid: 00d82c3b0571402468f09c417d3bf8b4, type: 3}
-      propertyPath: <playerDialogueVoice>k__BackingField.Guid.Data2
-      value: 1284690577
-      objectReference: {fileID: 0}
-    - target: {fileID: 4853364433276644238, guid: 00d82c3b0571402468f09c417d3bf8b4, type: 3}
-      propertyPath: <playerDialogueVoice>k__BackingField.Guid.Data3
-      value: -886960466
-      objectReference: {fileID: 0}
-    - target: {fileID: 4853364433276644238, guid: 00d82c3b0571402468f09c417d3bf8b4, type: 3}
-      propertyPath: <playerDialogueVoice>k__BackingField.Guid.Data4
-      value: 1216386615
-      objectReference: {fileID: 0}
     - target: {fileID: 8157492010415238534, guid: 00d82c3b0571402468f09c417d3bf8b4, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.25605506

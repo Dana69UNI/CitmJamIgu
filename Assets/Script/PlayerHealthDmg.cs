@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerHealthDmg : MonoBehaviour
 {
@@ -16,7 +17,7 @@ public class PlayerHealthDmg : MonoBehaviour
             StartCoroutine(CooldownDmgs());
             if (Health <= 0)
             {
-                Debug.Log("morite muchacho");
+                SceneManager.LoadScene(sceneBuildIndex: 11);
             }
         }
     }

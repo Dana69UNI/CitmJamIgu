@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using FMOD.Studio;
+using UnityEngine.SceneManagement;
 public class CombatDialogueHandler : MonoBehaviour
 {
     public TextMeshProUGUI textComp;
@@ -11,7 +12,7 @@ public class CombatDialogueHandler : MonoBehaviour
 
     private int index;
     private int contEnd;
-    public int EndScene=0;
+    public int EndScene;
     private EventInstance playerDialogue;
 
     void Start()
@@ -41,19 +42,28 @@ public class CombatDialogueHandler : MonoBehaviour
             textComp.text += c;
             if(c != ' ')
             {
-                playerDialogue.start();
+                PLAYBACK_STATE playbackState;
+                playerDialogue.getPlaybackState(out playbackState);
+                if (playbackState.Equals(PLAYBACK_STATE.STOPPED))
+                {
+                    playerDialogue.start();
+                }
             }
             
             yield return new WaitForSeconds(textSpeed);
         }
-        playerDialogue.stop(STOP_MODE.IMMEDIATE);
+        
         if(EndScene == 1)
         {
-            Debug.Log("Acabar primer dia");
+            SceneManager.LoadScene(sceneBuildIndex: 4);
         }
         if (EndScene == 2)
         {
-            Debug.Log("Acabar Segundo dia");
+            SceneManager.LoadScene(sceneBuildIndex: 8);
+        }
+        if (EndScene == 3)
+        {
+            SceneManager.LoadScene(sceneBuildIndex: 10);
         }
     }
 }
