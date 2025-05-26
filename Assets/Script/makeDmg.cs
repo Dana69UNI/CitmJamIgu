@@ -1,3 +1,4 @@
+using FMOD.Studio;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -6,10 +7,11 @@ public class makeDmg : MonoBehaviour
 {
     private GameObject Player;
     public PlayerHealthDmg dmgs;
-
+    private EventInstance Hit;
     private void Start()
     {
-        if(dmgs == null)
+        Hit = AudioManager.instance.CreateInstance(FMODEvents.instance.playerHit);
+        if (dmgs == null)
         {
             Player = GameObject.FindGameObjectWithTag("Player");
             dmgs = Player.GetComponent<PlayerHealthDmg>();
@@ -20,7 +22,9 @@ public class makeDmg : MonoBehaviour
     {
         if(collision.CompareTag("Player"))
         {
+            Hit.start();
             dmgs.TakeDmg();
+
         }
         
     }

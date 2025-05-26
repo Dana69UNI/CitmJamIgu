@@ -44,13 +44,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9c77f5947710d043a18ad1cb000a175, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <ambience>k__BackingField:
-    Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
   <music>k__BackingField:
     Guid:
       Data1: 664763374
@@ -81,11 +74,11 @@ MonoBehaviour:
     Path: event:/Combate2
   <musicCombate3>k__BackingField:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: 1998689638
+      Data2: 1202270328
+      Data3: -381400169
+      Data4: -2024919776
+    Path: event:/Combate3
   <playerFootsteps>k__BackingField:
     Guid:
       Data1: 163682548
@@ -107,6 +100,13 @@ MonoBehaviour:
       Data3: -886960466
       Data4: 1216386615
     Path: event:/DialogoPersonaje
+  <playerHit>k__BackingField:
+    Guid:
+      Data1: -297344485
+      Data2: 1266022182
+      Data3: 1763977886
+      Data4: -2042849543
+    Path: event:/Hit
 --- !u!1 &8427220216537858207
 GameObject:
   m_ObjectHideFlags: 0

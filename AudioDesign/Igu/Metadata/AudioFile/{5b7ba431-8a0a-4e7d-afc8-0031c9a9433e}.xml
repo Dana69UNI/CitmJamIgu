@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.02.00">
-	<object class="AudioFile" id="{cc0bc1ab-e172-49df-8f1b-aa4966359dc8}">
+	<object class="AudioFile" id="{5b7ba431-8a0a-4e7d-afc8-0031c9a9433e}">
 		<property name="assetPath">
-			<value>Combate1real.wav</value>
+			<value>BossFinal.mp3</value>
 		</property>
 		<property name="isStreaming">
 			<value>true</value>
 		</property>
 		<property name="frequencyInKHz">
-			<value>44.0999985</value>
+			<value>22.0499992</value>
 		</property>
 		<property name="channelCount">
 			<value>2</value>
 		</property>
 		<property name="length">
-			<value>32</value>
+			<value>58.540408163265305</value>
 		</property>
 		<relationship name="masterAssetFolder">
 			<destination>{ae72ebe3-6827-48ae-9e38-d1456f47aa81}</destination>

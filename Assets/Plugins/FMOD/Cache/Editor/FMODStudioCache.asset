@@ -15,7 +15,7 @@ MonoBehaviour:
   Path: AudioDesign/Igu/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638838178252904161
+  lastModified: 638838314781789901
   FileSizes:
   - Name: Desktop
     Value: 1036
@@ -89,10 +89,10 @@ MonoBehaviour:
   Path: AudioDesign/Igu/Build/Desktop/SFX.bank
   Name: SFX
   StudioPath: bank:/SFX
-  lastModified: 638838118634323240
+  lastModified: 638838316883983895
   FileSizes:
   - Name: Desktop
-    Value: 115264
+    Value: 117664
   Exists: 1
 --- !u!114 &-2438760361938612294
 MonoBehaviour:
@@ -136,10 +136,10 @@ MonoBehaviour:
   Path: AudioDesign/Igu/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638838178252924103
+  lastModified: 638838314781799881
   FileSizes:
   - Name: Desktop
-    Value: 1122
+    Value: 1188
   Exists: 1
 --- !u!114 &-683871411080219117
 MonoBehaviour:
@@ -220,13 +220,42 @@ MonoBehaviour:
   - {fileID: -2438760361938612294}
   - {fileID: -5821435242638816311}
   - {fileID: -683871411080219117}
+  - {fileID: 539396802803911464}
+  - {fileID: 2578524096724235255}
   EditorParameters: []
   MasterBanks:
   - {fileID: -9222648537041187565}
   StringsBanks:
   - {fileID: -1112541251094451638}
-  cacheTime: 638838178258772439
+  cacheTime: 638838316883983895
   cacheVersion: 131621
+--- !u!114 &539396802803911464
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Combate3
+  m_EditorClassIdentifier: 
+  Path: event:/Combate3
+  Guid:
+    Data1: 1998689638
+    Data2: 1202270328
+    Data3: -381400169
+    Data4: -2024919776
+  Banks:
+  - {fileID: 933160884871788800}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 58540
 --- !u!114 &652240697570775112
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -269,10 +298,10 @@ MonoBehaviour:
   Path: AudioDesign/Igu/Build/Desktop/Music.bank
   Name: Music
   StudioPath: bank:/Music
-  lastModified: 638838178258772439
+  lastModified: 638838310104267775
   FileSizes:
   - Name: Desktop
-    Value: 938080
+    Value: 1564096
   Exists: 1
 --- !u!114 &1633050649429318546
 MonoBehaviour:
@@ -301,3 +330,30 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 18102
+--- !u!114 &2578524096724235255
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Hit
+  m_EditorClassIdentifier: 
+  Path: event:/Hit
+  Guid:
+    Data1: -297344485
+    Data2: 1266022182
+    Data3: 1763977886
+    Data4: -2042849543
+  Banks:
+  - {fileID: -5820485695497359043}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 114
