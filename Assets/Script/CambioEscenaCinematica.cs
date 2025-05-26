@@ -23,5 +23,10 @@ public class CambioEscenaCinematica : MonoBehaviour
             SceneManager.LoadScene(sceneBuildIndex: 10);
 
         }
+        if (cinematicaInt == 3)
+        {
+            SceneManager.LoadScene(sceneBuildIndex: 12);
+
+        }
     }
 }

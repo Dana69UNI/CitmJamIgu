@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class PlayerHealthDmg : MonoBehaviour
 {
-    private int Health = 3;
+    private int Health = 10;
     private bool cdDmg = true;
     private Animator corAnim;
 

@@ -17,9 +17,9 @@ public class CombatDialogueHandler : MonoBehaviour
 
     void Start()
     {
-       playerDialogue = AudioManager.instance.CreateInstance(FMODEvents.instance.playerDialogue);
+        playerDialogue = AudioManager.instance.CreateInstance(FMODEvents.instance.playerDialogue);
 
-        
+
     }
 
     public void CallDialogue(int Index, int Cont)
@@ -28,9 +28,9 @@ public class CombatDialogueHandler : MonoBehaviour
         gameObject.SetActive(true);
         index = Index;
         contEnd = Index + Cont;
-  
+
         StartCoroutine(TypeLine(Index));
-        
+
 
     }
 
@@ -40,7 +40,7 @@ public class CombatDialogueHandler : MonoBehaviour
         {
 
             textComp.text += c;
-            if(c != ' ')
+            if (c != ' ')
             {
                 PLAYBACK_STATE playbackState;
                 playerDialogue.getPlaybackState(out playbackState);
@@ -49,11 +49,11 @@ public class CombatDialogueHandler : MonoBehaviour
                     playerDialogue.start();
                 }
             }
-            
+
             yield return new WaitForSeconds(textSpeed);
         }
-        
-        if(EndScene == 1)
+
+        if (EndScene == 1)
         {
             SceneManager.LoadScene(sceneBuildIndex: 4);
         }
@@ -65,5 +65,15 @@ public class CombatDialogueHandler : MonoBehaviour
         {
             SceneManager.LoadScene(sceneBuildIndex: 10);
         }
+        if (EndScene == 4)
+        {
+            StartCoroutine(Esperar3segundos());
+        }
+    }
+    IEnumerator Esperar3segundos()
+    {
+        yield return new WaitForSeconds(3f);
+       
+        Application.Quit();
     }
 }

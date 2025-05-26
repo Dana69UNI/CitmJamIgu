@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using static UnityEngine.RuleTile.TilingRuleOutput;
+using UnityEngine.SceneManagement;
 
 public class AtaquesCombate : MonoBehaviour
 {
@@ -40,7 +41,7 @@ public class AtaquesCombate : MonoBehaviour
         }
         else
         {
-            Debug.Log("Acabó la pelia");
+            SceneManager.LoadScene(sceneBuildIndex: 13);
         }
     }
 
