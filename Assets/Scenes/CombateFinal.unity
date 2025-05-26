@@ -3428,9 +3428,10 @@ MonoBehaviour:
   dialogos:
   - . . .
   - No te aparta  la mirada
-  - Te estrangula en batalla
+  - Bloquea tus pensamientos
   - El miedo te paraliza ...
   - No es momento de huir
+  - Rendirse no es una opcion
   textSpeed: 0.05
   EndScene: 0
 --- !u!222 &1131447850

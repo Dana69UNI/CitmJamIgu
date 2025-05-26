@@ -155,7 +155,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textComp: {fileID: 24036161}
   dialogos:
-  - Pero no te rindes. . .
+  - Pero no te rindes...
   textSpeed: 0.25
   EndScene: 3
 --- !u!114 &24036161

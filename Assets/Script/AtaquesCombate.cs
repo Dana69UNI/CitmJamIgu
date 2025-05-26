@@ -48,7 +48,7 @@ public class AtaquesCombate : MonoBehaviour
     {
         float tiempoTranscurrido = 0f;
 
-        while (tiempoTranscurrido < 2f)
+        while (tiempoTranscurrido < 0.5f)
         {
             tiempoTranscurrido += Time.deltaTime;
             yield return null;
@@ -60,7 +60,7 @@ public class AtaquesCombate : MonoBehaviour
     IEnumerator Ataque2()
     {
         float tiempoTranscurrido = 0f;
-        float[] tiemposDeAtaque = {0f, 2f, 4f, 5f, 7f ,9f, 11f, 13f, 16f, 17f, 18f, 19f, 20f };
+        float[] tiemposDeAtaque = {0f, 2f, 4f, 5f, 6f, 7f ,9f, 11f, 13f, 16f, 17f, 18f, 19f, 20f };
         int siguienteAtaque = 0;
 
         while (tiempoTranscurrido < ataque2Duracion)

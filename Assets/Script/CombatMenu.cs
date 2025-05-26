@@ -92,6 +92,10 @@ public class CombatMenu : MonoBehaviour
                 {
                     SceneManager.LoadScene(sceneBuildIndex: 3);
                 }
+                if (PeleaFinal)
+                {
+                    dialogueHandler.CallDialogue(5, 0);
+                }
 
             }
             if (buttonSelected == 0)
